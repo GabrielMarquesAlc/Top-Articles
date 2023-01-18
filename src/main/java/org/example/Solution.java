@@ -1,13 +1,11 @@
 package org.example;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.security.Timestamp;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -27,8 +25,6 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         int limit = 10;
         List<String> result = topArticles(limit);
-
-
     }
 
     public static List<String> topArticles(int limit) {
